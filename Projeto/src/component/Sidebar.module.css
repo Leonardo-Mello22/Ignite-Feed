@@ -30,13 +30,13 @@
 
 .profile strong {
     margin-top: 1rem;
-    color: var(--gray-900);
+    color: var(--blue-900);
     line-height: 1.6rem;
 }
 
 .profile span {
     font-size: 0.875rem;
-    color: var(--blue-900);
+    color: var(--blue-500);
     line-height: 1.6rem;
 }
 

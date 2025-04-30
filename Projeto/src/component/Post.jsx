@@ -1,21 +1,49 @@
 import styles from "./Post.module.css"
+import { Comment } from './Comment';
+
 
 export function Post(){
     return( 
-    <article className={styles.Post}>
+    <article className={styles.post}>
         <header>
-            <div className={styles.avatar}>
-                <img src="https://sdmntpreastus2.oaiusercontent.com/files/00000000-6adc-61f6-a452-a859010564e5/raw?se=2025-04-28T23%3A12%3A27Z&sp=r&sv=2024-08-04&sr=b&scid=ead9457b-47a6-5ecb-a38b-2382af79b1d6&skoid=a47cd303-16a2-427e-8efb-2ce406116005&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-28T20%3A05%3A35Z&ske=2025-04-29T20%3A05%3A35Z&sks=b&skv=2024-08-04&sig=qD2ZI41bgibTJfusBGlYhE8hhZgA4%2BPXURoOMw2%2Bl6U%3D "></img>
-                <div className={styles.authorInfo}></div>
+        <div className={styles.author}>
+            <img src="https://thaka.bing.com/th/id/OIP.ZcHTFaNcVC6uYNvf8wQSqwHaHa?rs=1&pid=ImgDetMain" />
+            <div className={styles.authorInfo}>
                 <strong>Lancelot</strong>
                 <span>Guerreiro</span>
             </div>
+        </div>
             <time dateTime="2025-04-28 19:27">Publicado a 'X' horas</time>
         </header>
         <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit labore ipsa unde asperiores dolore iusto deleniti aliquid perspiciatis voluptas blanditiis corrupti sapiente, autem ab ipsum, molestiae tempora consectetur possimus.
-            </p>
+            <div className={styles.content}>
+                <p>Fala galeraa 👋</p>
+
+                <p> Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
+
+                <p><a href=""> jane.design/doctorcare</a></p>
+
+                <p> 
+                    <a href="">#novoprojeto </a>{" "}
+                    <a href=""> #nlw </a>{" "}
+                    <a href="">#rocketseat</a>{" "}
+                </p>
+            </div>
+        </div>
+        <form className={styles.commentForm}>
+            <strong>Deixe seu feedback</strong>
+
+            <textarea
+                placeholder="Deixe seu comentario"
+            />
+            <footer>
+                <button type="submit">Publicar</button>
+            </footer>
+        </form>
+        <div className={styles.commentList}>
+            <Comment />
+            <Comment />
+            <Comment />
         </div>
     </article>
    )

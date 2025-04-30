@@ -4,6 +4,7 @@
     --gray-100: #e1e1e1;
     --gray-300: #c4c4cc;
     --gray-400: #8d8d99;
+    --gray-500: #374151;
     --gray-600: #323238;
     --gray-700: #29292e;
     --gray-800: #202024;
@@ -11,9 +12,20 @@
 
     --silver: #BBC2CC;
 
+    --red-500: #F75A68;
+
+    --green-500: #00B37E;
+    --green-900: #577c5e;
+
+    --blue-300: #66D3FA;
     --blue-500: #0052A2;
     --blue-900: #11114e;
-}
+  }
+
+  :focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--blue-500);
+  }
 
 * {
   margin: 0;
